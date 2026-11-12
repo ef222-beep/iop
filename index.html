@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="no">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IOP Kartlegging (Matematikk LK20)</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>IOP-Kartlegging</h1>
+            <p>Henter mål fra Udir (LK20) og genererer SMART-mål</p>
+        </header>
+
+        <section class="config">
+            <label for="trinn-select">Velg trinn for kartlegging:</label>
+            <select id="trinn-select">
+                <option value="2">2. Trinn</option>
+                <option value="4">4. Trinn</option>
+                <option value="7">7. Trinn</option>
+            </select>
+            <button id="load-btn">Last inn oppgaver</button>
+        </section>
+
+        <section id="kartlegging-section" class="hidden">
+            <h2>Kartleggingsoppgaver</h2>
+            <p>Kryss av for de målene/oppgavene eleven <strong>MESTRER</strong>.</p>
+            <div id="tasks-container"></div>
+            <button id="generate-btn" class="primary-btn">Generer IOP-forslag</button>
+        </section>
+
+        <section id="result-section" class="hidden">
+            <h2>Forslag til IOP-mål</h2>
+            <p>Basert på målene som <em>ikke</em> ble mestret, her er forslag til konkrete tiltak (kopier inn i ditt system):</p>
+            <div id="iop-output"></div>
+            <button id="reset-btn">Start på nytt</button>
+        </section>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
