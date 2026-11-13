@@ -11,7 +11,7 @@ body {
 }
 
 .container {
-    max-width: 850px;
+    max-width: 900px;
     margin: 0 auto;
     background: #fff;
     padding: 30px;
@@ -68,7 +68,7 @@ button {
     border-radius: 4px;
     cursor: pointer;
     font-size: 16px;
-    height: 42px; /* Match height with selects */
+    height: 42px;
 }
 
 button:hover {
@@ -99,12 +99,17 @@ button:hover {
     display: flex;
     align-items: flex-start;
     background: #fafafa;
+    transition: background 0.2s;
+}
+
+.task-card:hover {
+    background: #f1f7fd;
 }
 
 .task-card input[type="checkbox"] {
     margin-top: 5px;
     margin-right: 15px;
-    transform: scale(1.5);
+    transform: scale(1.6);
     cursor: pointer;
 }
 
@@ -127,6 +132,18 @@ button:hover {
     font-weight: 500;
 }
 
+.kategori-label {
+    display: inline-block;
+    background: #e2e3e5;
+    color: #383d41;
+    padding: 2px 6px;
+    border-radius: 3px;
+    font-size: 11px;
+    text-transform: uppercase;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
 #iop-output {
     background: #fdfdcb;
     padding: 20px;
@@ -134,4 +151,5 @@ button:hover {
     margin-bottom: 20px;
     white-space: pre-wrap;
     font-size: 15px;
+    line-height: 1.8;
 }
