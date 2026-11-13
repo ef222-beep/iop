@@ -11,7 +11,7 @@ body {
 }
 
 .container {
-    max-width: 800px;
+    max-width: 850px;
     margin: 0 auto;
     background: #fff;
     padding: 30px;
@@ -32,25 +32,43 @@ header h1 {
 
 .config {
     margin-bottom: 20px;
-    padding: 15px;
+    padding: 20px;
     background: #e9ecef;
     border-radius: 5px;
+    display: flex;
+    gap: 20px;
+    align-items: flex-end;
+    flex-wrap: wrap;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-group label {
+    font-weight: bold;
+    margin-bottom: 5px;
+    font-size: 14px;
 }
 
 select {
-    padding: 8px;
+    padding: 10px;
     font-size: 16px;
-    margin-right: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    min-width: 150px;
 }
 
 button {
-    padding: 10px 15px;
+    padding: 10px 20px;
     background: #0056b3;
     color: white;
     border: none;
     border-radius: 4px;
     cursor: pointer;
     font-size: 16px;
+    height: 42px; /* Match height with selects */
 }
 
 button:hover {
@@ -76,7 +94,7 @@ button:hover {
 .task-card {
     border: 1px solid #ddd;
     padding: 15px;
-    margin-bottom: 10px;
+    margin-bottom: 15px;
     border-radius: 5px;
     display: flex;
     align-items: flex-start;
@@ -90,22 +108,23 @@ button:hover {
     cursor: pointer;
 }
 
-.task-content h3 {
-    margin: 0 0 5px 0;
-    font-size: 16px;
-    color: #333;
+.task-content {
+    width: 100%;
 }
 
 .udir-maal {
-    font-size: 12px;
-    color: #666;
+    font-size: 13px;
+    color: #555;
     font-style: italic;
-    margin-bottom: 5px;
+    margin-bottom: 8px;
+    border-bottom: 1px dotted #ccc;
+    padding-bottom: 5px;
 }
 
 .oppgave-tekst {
-    font-size: 14px;
+    font-size: 15px;
     color: #0056b3;
+    font-weight: 500;
 }
 
 #iop-output {
@@ -114,4 +133,5 @@ button:hover {
     border-left: 5px solid #ffeb3b;
     margin-bottom: 20px;
     white-space: pre-wrap;
+    font-size: 15px;
 }
